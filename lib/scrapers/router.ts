@@ -1,4 +1,4 @@
-import { ScrapedProduct, ScraperResult } from './types';
+import type { ScraperResult } from './types';
 import { scrapeEbay } from './ebay';
 import { scrapeBestbuy } from './bestbuy';
 import { scrapeSteam } from './steam';
@@ -38,4 +38,4 @@ export async function scrapeProduct(url: string): Promise<ScraperResult> {
 }
 
 export { scrapeEbay, scrapeBestbuy, scrapeSteam };
-export type { ScrapedProduct, ScraperResult };
+export type { ScraperResult };
