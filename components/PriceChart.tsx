@@ -10,7 +10,7 @@ interface PriceHistoryItem {
   checked_at: string;
 }
 
-interface Product {
+export interface Product {
   id: string;
   name: string;
   target_price: number | null;

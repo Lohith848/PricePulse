@@ -21,7 +21,13 @@ interface Product {
   is_active: boolean;
   created_at: string;
   last_checked: string | null;
-  price_history?: PriceHistoryItem[];
+  price_history?: Array<{ price: number; checked_at: string }>;
+}
+
+interface ProductCardProps {
+  product: Product;
+  onDelete: (id: string) => void;
+  onViewChart: (product: Product) => void;
 }
 
 interface ProductCardProps {

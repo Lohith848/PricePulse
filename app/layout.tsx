@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -12,9 +12,28 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 export const metadata: Metadata = {
   title: "PricePulse - Smart Price Tracking",
   description: "Automate your shopping with AI-powered price monitoring. Track products across eBay, Best Buy, and Steam with real-time alerts.",
+  keywords: ["price tracking", "e-commerce", "deal alerts", "price drop", "shopping"],
+  authors: [{ name: "PricePulse" }],
+  creator: "PricePulse",
+  themeColor: "#0a0a0a",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://pricepulse.dev",
+    siteName: "PricePulse",
+    title: "PricePulse - Smart Price Tracking",
+    description: "Automate your shopping with AI-powered price monitoring.",
+  },
 };
 
 export default function RootLayout({
@@ -23,11 +42,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased min-h-screen`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
