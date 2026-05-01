@@ -88,25 +88,29 @@ export default function DashboardPage() {
 
     try {
       const supabase = createClient();
+      const { data: { user } } = await supabase.auth.getUser();
+      
+      if (!user) {
+        throw new Error('Not authenticated');
+      }
+
       const targetPrice = newProduct.targetPrice ? parseFloat(newProduct.targetPrice) : null;
 
-      const { error } = await supabase
-        .from('products')
-        .insert({
-          url: newProduct.url,
-          target_price: targetPrice,
-          current_price: 0,
-          last_price: 0,
-          is_active: true,
-        });
-
-      if (error) throw error;
-
-      await fetch('/api/scrape', {
+      const response = await fetch('/api/products', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url: newProduct.url }),
+        body: JSON.stringify({ 
+          url: newProduct.url, 
+          targetPrice,
+          userId: user.id 
+        }),
       });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.error || 'Failed to add product');
+      }
 
       setNewProduct({ url: '', targetPrice: '' });
       await fetchProducts();
@@ -119,13 +123,22 @@ export default function DashboardPage() {
 
   const handleDelete = async (id: string) => {
     const supabase = createClient();
-    const { error } = await supabase
-      .from('products')
-      .delete()
-      .eq('id', id);
+    const { data: { user } } = await supabase.auth.getUser();
+    
+    if (!user) {
+      setError('Not authenticated');
+      return;
+    }
 
-    if (!error) {
+    const response = await fetch(`/api/products?productId=${id}&userId=${user.id}`, {
+      method: 'DELETE',
+    });
+
+    if (response.ok) {
       fetchProducts();
+    } else {
+      const result = await response.json();
+      setError(result.error || 'Failed to delete product');
     }
   };
 
