@@ -1,7 +1,1 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+import type { NextConfig } from "next"; const nextConfig: NextConfig = { images: { remotePatterns: [{ protocol: "https", hostname: "i.ebayimg.com" }, { protocol: "https", hostname: "www.ebayimg.com" }, { protocol: "https", hostname: "shop.ebay.com" }, { protocol: "https", hostname: "media.buy.com" }, { protocol: "https", hostname: "pisces.buy.com" }, { protocol: "https", hostname: "cdn.steamstatic.com" }, { protocol: "https", hostname: "cdn.steamcontent.com" }, { protocol: "https", hostname: "cdn.discordapp.com" }] }, experimental: { serverActions: { bodySizeLimit: "2MB" } } }; export default nextConfig;

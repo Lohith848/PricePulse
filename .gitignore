@@ -24,6 +24,22 @@
 .DS_Store
 *.pem
 
+# local env files
+.ruvector.db
+*.db
+
+# claude
+.claude/
+.claude-flow/
+.swarm/
+.mcp.json
+
+# test files
+test.txt
+test6.txt
+read_prd.py
+prd_content.txt
+
 # debug
 npm-debug.log*
 yarn-debug.log*
