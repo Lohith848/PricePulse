@@ -1,5 +1,5 @@
 
-# 🚀 PricePulse
+# PricePulse
 
 **Track prices. Save money. Never miss a deal.**
 
@@ -11,35 +11,35 @@ Built with **Next.js, TypeScript, Supabase, and modern web scraping techniques**
 
 ---
 
-## ✨ Features
+## Features
 
-### 📊 Smart Price Tracking
+### Smart Price Tracking
 
 * Track product prices from supported e-commerce websites
 * Monitor multiple products simultaneously
 * Real-time price updates
 
-### 🔔 Instant Price Alerts
+### Instant Price Alerts
 
 * Get notified when prices fall below your desired threshold
 * Automated monitoring without manual checking
 * Stay ahead of flash sales and discounts
 
-### 🤖 Robust Web Scraping Engine
+### Robust Web Scraping Engine
 
 * Advanced bot detection handling
 * Automatic retry mechanism
 * Clean error handling and recovery
 * Resilient scraping architecture
 
-### 🔐 Authentication & User Dashboard
+### Authentication & User Dashboard
 
 * Secure user authentication
 * Personalized dashboard
 * Manage tracked products efficiently
 * View product history and status
 
-### ⚡ Modern User Experience
+## Modern User Experience
 
 * Responsive design for all devices
 * Fast and intuitive interface
@@ -48,7 +48,7 @@ Built with **Next.js, TypeScript, Supabase, and modern web scraping techniques**
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
@@ -74,21 +74,8 @@ Built with **Next.js, TypeScript, Supabase, and modern web scraping techniques**
 
 ---
 
-## 📸 Screenshots
 
-*Add screenshots of your dashboard, tracking page, and alerts here.*
-
-```md
-![Dashboard](public/dashboard.png)
-
-![Tracking](public/tracking.png)
-
-![Alerts](public/alerts.png)
-```
-
----
-
-## 🚀 Getting Started
+## Getting Started
 
 ### Clone the Repository
 
@@ -130,7 +117,7 @@ http://localhost:3000
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 PricePulse/
@@ -145,7 +132,7 @@ PricePulse/
 
 ---
 
-## 🔧 Key Highlights
+## Key Highlights
 
 ### Advanced Scraper Architecture
 
@@ -173,7 +160,7 @@ PricePulse includes a production-ready scraping engine featuring:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome.
 
@@ -200,7 +187,7 @@ git push origin feature/amazing-feature
 
 ---
 
-## 📝 Roadmap
+## Roadmap
 
 * [ ] Browser extension support
 * [ ] Telegram notifications
@@ -220,31 +207,16 @@ If you find this project useful, consider giving it a ⭐ on GitHub.
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 ### Lohith G
 
-Student Developer | Open Source Contributor | Full Stack Enthusiast
-
-GitHub: https://github.com/Lohith848
-
-LinkedIn: Add your LinkedIn profile here
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
-
-Feel free to use, modify, and distribute it.
-
----
 
 <div align="center">
 
 ### ⚡ Track Smarter. Buy Cheaper. Save More.
 
-Made with ☕, curiosity, and lots of debugging by **Lohith G**
+Made with curiosity, and lots of debugging by **Lohith G**
 
 </div>
 
