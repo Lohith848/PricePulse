@@ -1,36 +1,250 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🚀 PricePulse
 
-First, run the development server:
+**Track prices. Save money. Never miss a deal.**
+
+PricePulse is an open-source price tracking platform that monitors product prices across e-commerce websites and sends instant alerts when prices drop below your target value.
+
+Built with **Next.js, TypeScript, Supabase, and modern web scraping techniques**, PricePulse helps users make smarter purchasing decisions by automating price monitoring.
+
+🌐 Live Demo: https://pricepulse-scraper.vercel.app/
+
+---
+
+## ✨ Features
+
+### 📊 Smart Price Tracking
+
+* Track product prices from supported e-commerce websites
+* Monitor multiple products simultaneously
+* Real-time price updates
+
+### 🔔 Instant Price Alerts
+
+* Get notified when prices fall below your desired threshold
+* Automated monitoring without manual checking
+* Stay ahead of flash sales and discounts
+
+### 🤖 Robust Web Scraping Engine
+
+* Advanced bot detection handling
+* Automatic retry mechanism
+* Clean error handling and recovery
+* Resilient scraping architecture
+
+### 🔐 Authentication & User Dashboard
+
+* Secure user authentication
+* Personalized dashboard
+* Manage tracked products efficiently
+* View product history and status
+
+### ⚡ Modern User Experience
+
+* Responsive design for all devices
+* Fast and intuitive interface
+* Clean dashboard experience
+* Optimized performance
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+
+### Backend
+
+* Supabase
+* PostgreSQL
+
+### Scraping & Automation
+
+* Custom Scraper Engine
+* Retry Logic System
+* Bot Detection Handling
+
+### Deployment
+
+* Vercel
+
+---
+
+## 📸 Screenshots
+
+*Add screenshots of your dashboard, tracking page, and alerts here.*
+
+```md
+![Dashboard](public/dashboard.png)
+
+![Tracking](public/tracking.png)
+
+![Alerts](public/alerts.png)
+```
+
+---
+
+## 🚀 Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/Lohith848/PricePulse.git
+
+cd PricePulse
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Configure Environment Variables
+
+Create a `.env.local` file:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+
+SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
+```
+
+### Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📂 Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+PricePulse/
+├── app/
+├── components/
+├── lib/
+├── public/
+├── supabase-schema.sql
+├── package.json
+└── README.md
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔧 Key Highlights
 
-## Deploy on Vercel
+### Advanced Scraper Architecture
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+PricePulse includes a production-ready scraping engine featuring:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Bot detection handling
+* Retry strategies
+* Error recovery mechanisms
+* Reliable data extraction
+* Scalable architecture
+
+### Supabase Integration
+
+* User authentication
+* Database management
+* Secure API access
+* User-specific tracking data
+
+### Modern Dashboard
+
+* Product management
+* Price monitoring
+* Alert management
+* Clean UI/UX
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository
+2. Create a new feature branch
+
+```bash
+git checkout -b feature/amazing-feature
+```
+
+3. Commit your changes
+
+```bash
+git commit -m "Add amazing feature"
+```
+
+4. Push to your branch
+
+```bash
+git push origin feature/amazing-feature
+```
+
+5. Open a Pull Request
+
+---
+
+## 📝 Roadmap
+
+* [ ] Browser extension support
+* [ ] Telegram notifications
+* [ ] WhatsApp alerts
+* [ ] Product price history graphs
+* [ ] Multi-store comparison
+* [ ] AI-powered price prediction
+* [ ] Mobile application
+
+---
+
+## 🌟 Open Source Contribution
+
+This project is actively maintained and open for community contributions.
+
+If you find this project useful, consider giving it a ⭐ on GitHub.
+
+---
+
+## 👨‍💻 Author
+
+### Lohith G
+
+Student Developer | Open Source Contributor | Full Stack Enthusiast
+
+GitHub: https://github.com/Lohith848
+
+LinkedIn: Add your LinkedIn profile here
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+Feel free to use, modify, and distribute it.
+
+---
+
+<div align="center">
+
+### ⚡ Track Smarter. Buy Cheaper. Save More.
+
+Made with ☕, curiosity, and lots of debugging by **Lohith G**
+
+</div>
+
