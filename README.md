@@ -1,4 +1,3 @@
-
 # PricePulse
 
 **Track prices. Save money. Never miss a deal.**
